@@ -25,7 +25,7 @@ CloudFlare.define(
 
         el.appendChild(fbDiv);
         
-        document.body.insertAdjacentElement("afterEnd", "<div id='fb-root'></div>");
+        document.body.insertAdjacentHTML("afterEnd", "<div id='fb-root'></div>");
  
         // build the URL for your JS resource
         var url = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.4&appId=" + config.appId;

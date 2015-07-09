@@ -9,19 +9,19 @@ CloudFlare.define(
         // config will be an object containing any configurations that will be
         // stored by CloudFlare, specific to app + domain combo
 
-        var el = document.getElementById(config.targetelement || "header")
+        var el = document.getElementById(config.targetelement) || document.getElementsByClassName(config.targetelement || "main")
 
         /*
         <div class="fb-like" data-href="https://developers.facebook.com/docs/plugins/" 
             data-layout="button" data-action="like" data-show-faces="true" data-share="true"></div>
         */
         var fbDiv = document.createElement("div")
-            .setAttribute("data-layout","button")
-            .setAttribute("class", "fb-like")
-            .setAttribute("data-href","https://developers.facebook.com/docs/plugins/")
-            .setAttribute("data-action","like")
-            .setAttribute("data-show-faces","false")
-            .setAttribute("data-share","true");
+        fbDiv.setAttribute("data-layout", "button")
+        fbDiv.setAttribute("class", "fb-like")
+        fbDiv.setAttribute("data-href", "https://developers.facebook.com/docs/plugins/")
+        fbDiv.setAttribute("data-action", "like")
+        fbDiv.setAttribute("data-show-faces", "false")
+        fbDiv.setAttribute("data-share", "true");
 
         el.appendChild(fbDiv);
         

@@ -32,6 +32,13 @@
                 "name": "Target ELement",
                 "description": "A CSS selector to identify the element the Facebook button will be added to",
                 "private": false
+            },
+            {
+                "type": "string",
+                "id": "appId",
+                "name": "Your Facebook appId",
+                "description": "You must register your website (application) with Facebook to use this functionality. ref: https://developers.facebook.com/quickstarts/?platform=web",
+                "private": false
             }
         ]
     },

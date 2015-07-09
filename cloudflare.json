@@ -1,0 +1,42 @@
+{
+    
+    "name": "Facebook buttons",
+    "description": "Add Facebook Like and Share buttons to your website",
+    "version": "0.1",
+    "category": "social sharing",
+    "main": "public/javascripts/app_module.js",
+    "config":{
+        "details":{
+            "Language": "English",
+            "Price": "Free",
+            "Restrictions": "ref https://developers.facebook.com/policy/",
+            "TOS":"https://developers.facebook.com/policy/",
+            "has_js": true
+        }, 
+        "assets":{
+            "logos" : {
+                "200px": "./public/images/logo-200.png",
+                "132px": "./public/images/logo-132.png"
+            },
+            "detail_page" : [
+                "./public/images/example.png"
+            ],
+            "images" : [
+                "./public/images/counter.png"
+            ]
+        },
+        "interface": [
+            {
+                "type": "string",
+                "id": "targetelement",
+                "name": "Target ELement",
+                "description": "A CSS selector to identify the element the Facebook button will be added to",
+                "private": false
+            }
+        ]
+    },
+    "account": {
+    },
+    "billing": {
+    }
+}
